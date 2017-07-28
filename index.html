@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Location Training</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header>
+      <div class="container-fluid top-location">
+        <div class="container">
+          <div class="col-md-12 col-xs-12 l-top">
+            <a href="#"><span>LOCATION</span> <span>FIND</span> <img src="img/map-pin.png" alt=""></a>
+          </div>
+          <div class="col-sm-11 r-top">
+            <a href="#"><button class="glyphicon glyphicon-chevron-down"></button><span>Our Network</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid" id="nav-location">
+        <div class="container">
+          <div class="dropdown">
+            <button class="dropbtn"><img src="img/map.png" alt="">Find Locations</button>
+            <div class="dropdown-content">
+              <a href="#">Find a Location <span>|</span></a>
+              <a href="#">Add a location <span>|</span></a>
+              <a href="#">Review a location <span>|</span></a>
+              <a href="#">Review a location <span>|</span></a>
+              <a href="#">Review a location <span></span></a>
+              <a href="#"><img src="img/arrow.png" alt=""> Login Here or</a>
+              <a href="#"><button type="button">Register</button></a>
+            </div>
+          </div>
+          <div>
+            <button class="btn-our"><img src="img/openbook.png" alt="">Our Species</button>
+            <button class="btn-shop"><img src="img/basket.png" alt="">Shop</a></button>
+            </div>     
+          </div>
+          <div class="r-menu">
+            <a href="#"><img src="img/Account.png" alt="">My Accout</a>
+            <a href="#"><img src="img/ribbon.png" alt="">Sign Up</a>
+            <a href="#"><img src="img/email.png" alt="">Contact</a> 
+          </div>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="container-fluid" id="main-content">
+        <div id="map"></div>
+        <div class="banner container">
+          <div class="col-sm-24 round-span">
+            <div class="col-sm-7">
+              <span>Drop pin onto the location on map</span>
+            </div>
+            <div class="col-sm-7">
+              <span>Add a Species found at location</span>
+            </div>
+            <div class="col-sm-6">
+              <select>
+                <option value="Select Fish" selected>Select Fish</option>
+              </select>
+            </div>
+            <div class="col-sm-4">
+              <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                Add Location
+              </button>
+            </div>
+          </div>
+        </div>
+      </div> 
+      <div class="container-fluid">
+        <div class="content-location container">
+          <div class="btn-menu">
+            <button><img src="img/user.png" alt=""></button><br>
+            <button><img src="img/account-details.png" alt=""></button><br>
+            <button><img src="img/fav.png" alt=""></button><br>
+            <button><img src="img/acvivity.png" alt=""></button><br>
+            <button><img src="img/add.png" alt=""></button><br>
+          </div>
+          <div class="main-content">
+            <div class="main-box" id="top-main">
+              <h2>Locations you’ve Add</h2>
+              <p>Lets get some dunny no worries come a bloke. Stands out like a </p>
+              <div class="table-list row">
+                <div class="col-sm-9 name">
+                  <span>Blaz’s wickaed ass fishing spot..</span>
+                </div>
+                <div class="col-sm-10 address">
+                  <span>Mullet, Australian Salmon,</span>
+                </div>
+                <div class="col-sm-5 see">
+                  <span>See Location</span><span>01</span>
+                </div>
+              </div>
+              <div class="table-list row">
+                <div class="col-sm-9 name">
+                  <span>Ball Bag River</span>
+                </div>
+                <div class="col-sm-10 address">
+                  <span>Mullet, Australian Salmon,</span>
+                </div>
+                <div class="col-sm-5 see">
+                  <span>See Location</span><span>13</span>
+                </div>
+              </div>
+              <div class="table-list row">
+                <div class="col-sm-9 name">
+                  <span>Blaz’s wickaed ass fishing spot..</span>
+                </div>
+                <div class="col-sm-10 address">
+                  <span>Mullet, Australian Salmon,</span>
+                </div>
+                <div class="col-sm-5 see">
+                  <span>See Location</span><span>23</span>
+                </div>
+              </div>
+              <div class="table-list row">
+                <div class="col-sm-9 name">
+                  <span>Ball Bag River</span>
+                </div>
+                <div class="col-sm-10 address">
+                  <span>Mullet, Australian Salmon,</span>
+                </div>
+                <div class="col-sm-5 see">
+                  <span>See Location</span><span>04</span>
+                </div>
+              </div>
+            </div>
+            <div class="main-section">
+              <div class="main-box" id="bottom-main">
+                <h2>Recent locations you’ve rated</h2>
+                <p>Lets get some dunny no worries come a bloke. Stands out like a </p>
+                <div class="table-list row">
+                  <div class="col-sm-7">
+                    <span>Aire River</span>
+                  </div>
+                  <div class="col-sm-7">
+                    <span>Mullet, Australian Salmon,</span>
+                  </div>
+                  <div class="col-sm-5">
+                    <span><img src="img/star.png" alt=""><img src="img/star.png" alt=""><img src="img/star.png" alt=""><img src="img/star.png" alt=""></span>
+                  </div>
+                  <div class="col-sm-5">
+                    <span>View Location on Map</span>
+                  </div>
+                </div>
+                <div class="table-list row">
+                  <div class="col-sm-7">
+                    <span>Ball Bag River</span>
+                  </div>
+                  <div class="col-sm-7">
+                    <span>Australian Salmon, Mullet, Trevally,</span>
+                  </div>
+                  <div class="col-sm-5">
+                    <span><img src="img/star.png" alt=""><img src="img/star.png" alt=""><img src="img/star.png" alt=""><img src="img/star.png" alt=""></span>
+                  </div>
+                  <div class="col-sm-5">
+                    <span>View Location on Map</span>
+                  </div>
+                </div>
+                <div class="table-list row">
+                  <div class="col-sm-7">
+                    <span>Aireys Inlet - Eagle Rock</span>
+                  </div>
+                  <div class="col-sm-7">
+                    <span>Beach east side of Aire River...</span>
+                  </div>
+                  <div class="col-sm-5">
+                    <span><img src="img/star.png" alt=""><img src="img/star.png" alt=""><img src="img/star.png" alt=""><img src="img/star.png" alt=""></span>
+                  </div>
+                  <div class="col-sm-5">
+                    <span>View Location on Map</span>
+                  </div>
+                </div> 
+                <div class="table-list row">
+                  <div class="col-sm-7">
+                    <span>Ball Bag River</span>
+                  </div>
+                  <div class="col-sm-7">
+                    <span>Australian Salmon, Mullet, Trevally,</span>
+                  </div>
+                  <div class="col-sm-5">
+                    <span><img src="img/star.png" alt=""><img src="img/star.png" alt=""><img src="img/star.png" alt=""><img src="img/star.png" alt=""></span>
+                  </div>
+                  <div class="col-sm-5">
+                    <span>View Location on Map</span>
+                  </div>
+                </div>
+                <div class="table-list row">
+                  <div class="col-sm-7">
+                    <span>Aireys Inlet - Eagle Rock</span>
+                  </div>
+                  <div class="col-sm-7">
+                    <span>Beach east side of Aire River...</span>
+                  </div>
+                  <div class="col-sm-5">
+                    <span><img src="img/star.png" alt=""><img src="img/star.png" alt=""><img src="img/star.png" alt=""><img src="img/star.png" alt=""></span>
+                  </div>
+                  <div class="col-sm-5">
+                    <span>View Location on Map</span>
+                  </div>
+                </div> 
+                <div class="table-list row">
+                  <div class="col-sm-7">
+                    <span>Ball Bag River</span>
+                  </div>
+                  <div class="col-sm-7">
+                    <span>Australian Salmon, Mullet, Trevally,</span>
+                  </div>
+                  <div class="col-sm-5">
+                    <span><img src="img/star.png" alt=""><img src="img/star.png" alt=""><img src="img/star.png" alt=""><img src="img/star.png" alt=""></span>
+                  </div>
+                  <div class="col-sm-5">
+                    <span>View Location on Map</span>
+                  </div>
+                </div>
+                <div class="table-list row">
+                  <div class="col-sm-7">
+                    <span>Aireys Inlet - Eagle Rock</span>
+                  </div>
+                  <div class="col-sm-7">
+                    <span>Beach east side of Aire River...</span>
+                  </div>
+                  <div class="col-sm-5">
+                    <span><img src="img/star.png" alt=""><img src="img/star.png" alt=""><img src="img/star.png" alt=""><img src="img/star.png" alt=""></span>
+                  </div>
+                  <div class="col-sm-5">
+                    <span>View Location on Map</span>
+                  </div>
+                </div> 
+                <div class="table-list row">
+                  <div class="col-sm-7">
+                    <span>Ball Bag River</span>
+                  </div>
+                  <div class="col-sm-7">
+                    <span>Australian Salmon, Mullet, Trevally,</span>
+                  </div>
+                  <div class="col-sm-5">
+                    <span><img src="img/star.png" alt=""><img src="img/star.png" alt=""><img src="img/star.png" alt=""><img src="img/star.png" alt=""></span>
+                  </div>
+                  <div class="col-sm-5">
+                    <span>View Location on Map</span>
+                  </div>
+                </div>
+                <div class="table-list row">
+                  <div class="col-sm-7">
+                    <span>Aireys Inlet - Eagle Rock</span>
+                  </div>
+                  <div class="col-sm-7">
+                    <span>Beach east side of Aire River...</span>
+                  </div>
+                  <div class="col-sm-5">
+                    <span><img src="img/star.png" alt=""><img src="img/star.png" alt=""><img src="img/star.png" alt=""><img src="img/star.png" alt=""></span>
+                  </div>
+                  <div class="col-sm-5">
+                    <span>View Location on Map</span>
+                  </div>
+                </div> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </section>
+    <footer>
+      <div class="f-menu container">
+        <div class="col-sm-4">
+          <span>About Us</span><br>
+          <ul class="list-inline">
+            <li><a href="#">About us</a></li><br>
+            <li><a href="#">Who started it</a></li><br>
+            <li><a href="#"></a></li>
+          </ul>
+        </div>
+        <div class="col-sm-5">
+          <span>Account Information</span><br>
+          <ul class="list-inline">
+            <li><a href="#">How to login</a></li><br>
+            <li><a href="#">Create an account</a></li><br>
+            <li><a href="#">Logout</a></li><br>
+            <li><a href="#">Join us</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-4">
+          <span>About Us</span>
+          <ul class="list-inline">
+            <li><a href="#">About us</a></li><br>
+            <li><a href="#">Who started it </a></li><br>
+            <li><a href="#">how to help</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-5">
+          <span>Account Information</span><br>
+          <ul class="list-inline">
+            <li><a href="#">How to login</a></li><br>
+            <li><a href="#">Create an account</a></li><br>
+            <li><a href="#">Logout</a></li><br>
+            <li><a href="#">Join us</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 r-footer">
+            <a href="#"><button class="glyphicon glyphicon-chevron-down"></button><span>Our Network</span></a>
+          </div>
+      </div> 
+      <div class="container"><p>We've made some small changes to BlazRobar.com. To keep the quaWe've made some small changes to BlazRobar.com. To keep the quaWe've made some small changes to BlazRobar.com. To keep the quaWe've made some small changes to BlazRobar.com. To keep the quaWe've made some small changes to BlazRobar.com. To keep the quaWe've made some small changes to BlazRobar.com. To keep the qua</p></div>
+    </footer>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title" id="myModalLabel">Search address you want!</h4>
+          </div>
+          <div class="modal-body">
+            <div id="pac-container">
+              <input id="pac-input" type="text"
+                  placeholder="Enter a location" class="input-search">
+            </div>
+            <div id="map"></div>
+              <div id="infowindow-content">
+                <img src="" width="16" height="16" id="place-icon"m style="display: none;">
+                <span id="place-name"  class="title"></span><br>
+                <span id="place-address"></span>
+              </div>
+            </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmVSTarxQnGA8L1O_lb2X08cw5bo2_l3w&libraries=places&callback=initAutocomplete"
+    async defer></script>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/locationjquery.js"></script>
+    </script>
+  </body>
+</html>
