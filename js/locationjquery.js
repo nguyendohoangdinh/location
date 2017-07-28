@@ -82,30 +82,6 @@ function initAutocomplete() {
            placeId: place.place_id,
             location: place.geometry.location
           });
-          // marker.setVisible(true);
-        // $(".main-box").append("place.name").append("address");
-        // var mapauto = new google.maps.LatLngBounds();
-        //   place.forEach(function(places) {
-        //   if (!place.geometry) {
-        //     return;
-        //   }
-        //   // Create a marker for each place.
-        //   markers.push(new google.maps.Marker({
-        //     map: map,
-        //     title: place.name,
-        //     animation: google.maps.Animation.BOUNCE,
-        //     position: place.geometry.location
-        //   }));
-        //   name = place.name;
-        //   address = place.formatted_address;
-        //   if (place.geometry.viewport) {
-        //     // Only geocodes have viewport.
-        //     bounds.union(place.geometry.viewport);
-        //   } else {
-        //     bounds.extend(place.geometry.location);
-        //   }
-        // });
-        // map.fitBounds(mapauto);
         
       });
 
@@ -123,78 +99,3 @@ $(document).ready(function(){
     }
   }); 
 });
-
-
-
-//   var map = new google.maps.Map(document.getElementById('googleMap'), {
-//     zoom: 7,
-//     center: new google.maps.LatLng(13.09546, 109.32094),
-//     mapTypeId: google.maps.MapTypeId.ROADMAP
-//   });
-//   var infowindow = new google.maps.InfoWindow();
-//   var markers, i;
-
-//   for (i = 0; i < locations.length; i++) {
-//     markers = new google.maps.Marker({
-//       position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-//       map: map,
-//       animation: google.maps.Animation.BOUNCE
-
-//     });
-
-//     google.maps.event.addListener(markers, 'click', (function(marker, i) {
-//       return function() {
-//         infowindow.setContent(locations[i][0]);
-//         infowindow.open(map, markers);
-//       }
-//     })(markers, i));
-//   }
-
- 
-
-//     // Clear out the old markers.
-//     markers.forEach(function(marker) {
-//       marker.setMap(null);
-//     });
-//     markers = [];
-
-//     // For each place, get the icon, name and location.
-//     var bounds = new google.maps.LatLngBounds();
-//     places.forEach(function(place) {
-//       if (!place.geometry) {
-//         console.log("Returned place contains no geometry");
-//         return;
-//       }
-//       // Create a marker for each place.
-//       markers.push(new google.maps.Marker({
-//         map: map,
-//         title: place.name,
-//         animation: google.maps.Animation.BOUNCE,
-//         position: place.geometry.location
-//       }));
-//       name = place.name;
-//       address = place.formatted_address;
-//       if (place.geometry.viewport) {
-//         // Only geocodes have viewport.
-//         bounds.union(place.geometry.viewport);
-//       } else {
-//         bounds.extend(place.geometry.location);
-//       }
-//     });
-
-//     map.fitBounds(bounds);
-//     var html1 = "", html3 = "",html2 = "";
-//         html1 += "<div class='location-detail'>";
-//         html1 += "<div class='row'>";
-//         html1 += "<div class='col-md-7 name-location'>";
-//         html2 += " </div>";
-//         html2 += "<div class='col-md-7 address-location col-md-offset-1'>";
-//         html3 += "</div>";
-//         html3 += "<div class='col-md-6 see-map col-md-offset-2'>";
-//         html3 += " <p>See Location</p><span><i>01</i></span>";
-//         html3 += "</div>";
-//         html3 += "</div>";
-//         html3 += "</div>";
-//     $("div.location-info").append(html1 + "<p>" + name + "</p>" + html2 + "<p>" + address + "</p>" + html3);
-//   });
-// }

@@ -4,7 +4,8 @@
 
 .container {
   width: 68.8%;
-  padding: 0; }
+  padding: 0;
+  margin: 0 auto; }
 
 .main-container {
   width: 94.4%;
@@ -18,6 +19,7 @@
   margin: 0 auto; }
 
 header .top-location {
+  /*position: relative;*/
   line-height: 72px;
   background-color: #1465af;
   padding: 0; }
@@ -58,10 +60,19 @@ header #nav-location {
   position: relative;
   height: 68px;
   background-color: #003663; }
-  header #nav-location .r-menu {
+  header #nav-location div.r-menu {
+    display: inline-block;
+    float: right;
     position: absolute;
-    display: block;
-    float: right; }
+    margin: 0 auto;
+    top: 32px;
+    right: 250px; }
+    header #nav-location div.r-menu a {
+      margin-right: 20px;
+      font-size: 12px;
+      font-weight: bold; }
+      header #nav-location div.r-menu a img {
+        margin-right: 10px; }
   header #nav-location .btn-our {
     border-radius: 3px;
     background-color: #04264c;
@@ -148,9 +159,9 @@ section {
   section .banner {
     position: absolute;
     font-family: arial;
-    height: 59px;
     top: 482px;
     left: 15.3%;
+    height: 59px;
     border-radius: 3px;
     background-color: #003663; }
     section .banner span {
@@ -206,7 +217,7 @@ section {
     section .banner button {
       float: left;
       width: 120px;
-      height: 38px;
+      /*height: 38px;*/
       margin-top: 10px;
       border: 1px solid #04264c;
       background-color: #b2cd1d;
@@ -234,24 +245,28 @@ section {
       margin-top: 20px;
       border-radius: 5px;
       margin-right: 0; }
-  section .content-location .btn-menu {
-    margin-top: 20px;
-    float: left;
-    padding: 0; }
-    section .content-location .btn-menu button {
-      margin-top: 2px;
-      margin-left: 2px;
-      border-radius: 3px;
-      background-color: #0c99c8;
-      border: 1px solid #0c99c8;
-      width: 47px;
+  section .content-location {
+    position: relative; }
+    section .content-location button {
       height: 42px; }
-      section .content-location .btn-menu button:nth-child(9) {
+    section .content-location .btn-menu {
+      position: absolute;
+      top: 20px;
+      float: left;
+      padding: 0; }
+      section .content-location .btn-menu button {
+        margin-top: 2px;
+        margin-left: 10px;
         border-radius: 3px;
-        background-color: #c2d835;
-        border: 1px solid #c2d835;
-        width: 47px;
-        height: 42px; }
+        background-color: #0c99c8;
+        border: 1px solid #0c99c8;
+        width: 47px; }
+        section .content-location .btn-menu button:nth-child(9) {
+          border-radius: 3px;
+          background-color: #c2d835;
+          border: 1px solid #c2d835;
+          width: 47px;
+          height: 42px; }
   section #top-main h2 {
     padding-top: 45px; }
   section #top-main div.table-list:nth-child(odd) {
